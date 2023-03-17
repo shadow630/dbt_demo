@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: SQLDemo
+    database: mybigquery-380508
+    schema: SQLDemo
+    tables:
+      - name: EMPLOYEE 
+      - name: DEPARTMENT
