@@ -2,6 +2,6 @@
 
     select *
 
-    from from {{source('SQLDemo','EMPLOYEE')}}`
+    from {{source('SQLDemo','EMPLOYEE')}}`
     )
     select * from employee

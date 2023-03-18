@@ -5,12 +5,14 @@ with emp as(
 select 
  EmpFName,
  Salary,
- DeptName
+ DeptName,
+ Job
  from{{ ref('stg_employee')}} employee
  left join {{ ref('stg_depertment')}} DEPARTMENT
-on(
+/*on(
   employee.DEPTCODE=DEPARTMENT.DEPTCODE
-)
+)*/
+using(DEPTCODE)
 ) select * from emp
  
  
